@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AE6A4D1206DCD0B00D52D45 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6A4D0206DCD0B00D52D45 /* DeviceTableViewCell.swift */; };
+		5AE6A4D3206DDAF600D52D45 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6A4D2206DDAF600D52D45 /* DeviceViewController.swift */; };
+		5AE6A4D5206DDC7600D52D45 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6A4D4206DDC7600D52D45 /* BLEManager.swift */; };
+		5AE6A4D7206DDDC600D52D45 /* BLEDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6A4D6206DDDC600D52D45 /* BLEDevice.swift */; };
+		5AE6A4DA206DFAA100D52D45 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE6A4D9206DFAA100D52D45 /* NetworkExtension.framework */; };
 		5AF1021A206CCDBA00AFCF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF10219206CCDBA00AFCF66 /* AppDelegate.swift */; };
 		5AF1021C206CCDBA00AFCF66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF1021B206CCDBA00AFCF66 /* ViewController.swift */; };
 		5AF1021F206CCDBA00AFCF66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF1021D206CCDBA00AFCF66 /* Main.storyboard */; };
@@ -15,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AE6A4D0206DCD0B00D52D45 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		5AE6A4D2206DDAF600D52D45 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		5AE6A4D4206DDC7600D52D45 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		5AE6A4D6206DDDC600D52D45 /* BLEDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevice.swift; sourceTree = "<group>"; };
+		5AE6A4D9206DFAA100D52D45 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		5AE6A4DB206DFAA100D52D45 /* BLE_central.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BLE_central.entitlements; sourceTree = "<group>"; };
 		5AF10216206CCDBA00AFCF66 /* BLE_central.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_central.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF10219206CCDBA00AFCF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF1021B206CCDBA00AFCF66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +40,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE6A4DA206DFAA100D52D45 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AE6A4D8206DFAA100D52D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AE6A4D9206DFAA100D52D45 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5AF1020D206CCDBA00AFCF66 = {
 			isa = PBXGroup;
 			children = (
 				5AF10218206CCDBA00AFCF66 /* BLE_central */,
 				5AF10217206CCDBA00AFCF66 /* Products */,
+				5AE6A4D8206DFAA100D52D45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +75,17 @@
 		5AF10218206CCDBA00AFCF66 /* BLE_central */ = {
 			isa = PBXGroup;
 			children = (
+				5AE6A4DB206DFAA100D52D45 /* BLE_central.entitlements */,
 				5AF10219206CCDBA00AFCF66 /* AppDelegate.swift */,
 				5AF1021B206CCDBA00AFCF66 /* ViewController.swift */,
+				5AE6A4D6206DDDC600D52D45 /* BLEDevice.swift */,
+				5AE6A4D4206DDC7600D52D45 /* BLEManager.swift */,
 				5AF1021D206CCDBA00AFCF66 /* Main.storyboard */,
 				5AF10220206CCDBA00AFCF66 /* Assets.xcassets */,
 				5AF10222206CCDBA00AFCF66 /* LaunchScreen.storyboard */,
 				5AF10225206CCDBA00AFCF66 /* Info.plist */,
+				5AE6A4D0206DCD0B00D52D45 /* DeviceTableViewCell.swift */,
+				5AE6A4D2206DDAF600D52D45 /* DeviceViewController.swift */,
 			);
 			path = BLE_central;
 			sourceTree = "<group>";
@@ -97,6 +123,14 @@
 					5AF10215206CCDBA00AFCF66 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,7 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE6A4D3206DDAF600D52D45 /* DeviceViewController.swift in Sources */,
+				5AE6A4D7206DDDC600D52D45 /* BLEDevice.swift in Sources */,
 				5AF1021C206CCDBA00AFCF66 /* ViewController.swift in Sources */,
+				5AE6A4D5206DDC7600D52D45 /* BLEManager.swift in Sources */,
+				5AE6A4D1206DCD0B00D52D45 /* DeviceTableViewCell.swift in Sources */,
 				5AF1021A206CCDBA00AFCF66 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +312,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BLE_central/BLE_central.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDZ35D8R56;
 				INFOPLIST_FILE = BLE_central/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zerozero.BLE-central";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +329,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BLE_central/BLE_central.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDZ35D8R56;
 				INFOPLIST_FILE = BLE_central/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zerozero.BLE-central";
 				PRODUCT_NAME = "$(TARGET_NAME)";
